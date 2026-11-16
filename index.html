@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,12 +16,9 @@
 .hero{min-height:690px;padding:80px 8vw 70px;display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:5vw;overflow:hidden}
 .kicker{font-size:10px;letter-spacing:.24em;text-transform:uppercase;color:var(--muted);margin-bottom:25px}.hero h1{font-family:Georgia,serif;font-weight:400;font-size:clamp(54px,7vw,100px);line-height:.94;letter-spacing:-.055em;margin:0 0 26px;max-width:650px}.hero h1 em{color:#9b7d61;font-weight:400}.hero p{font-family:Georgia,serif;font-size:19px;line-height:1.6;color:#766454;max-width:390px;margin:0 0 35px}
 .primary{display:inline-flex;align-items:center;gap:22px;background:var(--brown);color:#fff9f1;padding:17px 23px;border-radius:99px;font-size:10px;letter-spacing:.16em;text-transform:uppercase;transition:.3s}.primary:hover{background:var(--dark);transform:translateY(-3px)}.arrow{font-size:18px}
-.hero-art{height:510px;position:relative;display:grid;place-items:center}.orb{width:min(39vw,440px);aspect-ratio:1;border-radius:50%;background:radial-gradient(circle at 35% 28%,#fffaf2,#e5d4c0 64%,#c7ad91);box-shadow:inset -22px -25px 50px #8d705033,0 35px 75px #735a3d20;position:absolute}
-.pendant{width:180px;height:180px;border-radius:50%;background:linear-gradient(145deg,#fff9ee,#c7b49b);border:9px solid #b89d7e;box-shadow:0 20px 45px #4c382c33,inset 0 0 0 5px #f8f0e4;position:relative;z-index:2;display:grid;place-items:center;transform:rotate(-12deg);animation:float 5s ease-in-out infinite}
-.pendant:before{content:"";position:absolute;inset:17px;border:1px solid #9c8062;border-radius:50%}.pendant span{font-size:52px;filter:sepia(.4);opacity:.8}
-.chain{position:absolute;width:210px;height:210px;border:2px solid #a98e70;border-radius:50%;z-index:1;transform:translateY(-128px) rotateX(64deg);opacity:.8}
-.art-caption{position:absolute;bottom:18px;right:5%;font-family:Georgia,serif;font-style:italic;color:#8b755f;font-size:14px}
-@keyframes float{0%,100%{transform:translateY(0) rotate(-12deg)}50%{transform:translateY(-13px) rotate(-8deg)}}
+.hero-art{height:510px;position:relative;display:grid;place-items:center}
+.hero-product-image{width:100%;max-width:480px;height:auto;border-radius:18px;box-shadow:0 20px 50px #563d2d22;display:block}
+.info-product-image{width:100%;max-width:900px;height:auto;border-radius:18px;display:block;margin:35px auto}
 .marquee{padding:18px 0;background:var(--brown);color:#f5ebdf;overflow:hidden;white-space:nowrap;font-family:Georgia,serif;font-style:italic;font-size:16px;letter-spacing:.08em}.marquee span{display:inline-block;padding-left:100%;animation:marquee 28s linear infinite}@keyframes marquee{to{transform:translateX(-100%)}}
 .section{padding:110px 8vw}.section-head{display:flex;justify-content:space-between;align-items:end;gap:30px;margin-bottom:55px}.eyebrow{font-size:10px;letter-spacing:.22em;text-transform:uppercase;color:var(--muted);margin-bottom:15px}.section h2{font:400 clamp(38px,5vw,65px)/1 Georgia,serif;letter-spacing:-.04em;margin:0}.section-head p{max-width:300px;color:var(--muted);font:16px/1.6 Georgia,serif}
 .product-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:22px}.product-card{background:var(--paper);min-height:450px;position:relative;overflow:hidden;padding:35px;display:flex;flex-direction:column;justify-content:space-between}.product-card:first-child{min-height:560px}.product-visual{flex:1;display:grid;place-items:center;position:relative}.product-visual .pendant{width:155px;height:155px}.product-visual .pendant span{font-size:42px}.product-card h3{font:400 29px Georgia,serif;margin:0 0 8px}.product-card p{font-size:12px;color:var(--muted);margin:0}.tag{position:absolute;top:22px;left:22px;font-size:9px;letter-spacing:.15em;text-transform:uppercase;color:var(--muted)}
@@ -28,7 +26,7 @@
 .note{background:var(--brown);color:#f7eee4;text-align:center;padding:100px 8vw}.note .eyebrow{color:#c8b49e}.note h2{font:400 clamp(42px,6vw,76px)/1.04 Georgia,serif;max-width:800px;margin:0 auto 25px;letter-spacing:-.04em}.note p{font:italic 18px Georgia,serif;color:#d8c8b7}
 footer{padding:42px 6vw;display:flex;justify-content:space-between;align-items:center;gap:20px;color:var(--muted);font-size:11px;letter-spacing:.08em}.footbrand{font-weight:800;letter-spacing:.2em;color:var(--brown)}
 .reveal{opacity:0;transform:translateY(25px);animation:rise .9s ease forwards}.reveal.delay{animation-delay:.2s}@keyframes rise{to{opacity:1;transform:none}}
-@media(max-width:760px){.nav{height:65px;padding:0 5vw}.links{display:none}.hero{grid-template-columns:1fr;padding:65px 7vw 30px;gap:0}.hero-art{height:380px}.orb{width:75vw}.section{padding:75px 7vw}.section-head{display:block}.section-head p{margin-top:20px}.product-grid,.story{grid-template-columns:1fr}.product-card,.product-card:first-child{min-height:430px}.story{gap:35px}.story-visual{height:320px}.steps{grid-template-columns:1fr;gap:25px}.note{padding:75px 7vw}footer{flex-direction:column;text-align:center}}
+@media(max-width:760px){.nav{height:65px;padding:0 5vw}.links{display:none}.hero{grid-template-columns:1fr;padding:65px 7vw 30px;gap:0}.hero-art{height:auto;min-height:300px;margin-top:25px}.hero-product-image{max-width:390px}.section{padding:75px 7vw}.section-head{display:block}.section-head p{margin-top:20px}.product-grid,.story{grid-template-columns:1fr}.product-card,.product-card:first-child{min-height:430px}.story{gap:35px}.story-visual{height:320px}.steps{grid-template-columns:1fr;gap:25px}.note{padding:75px 7vw}footer{flex-direction:column;text-align:center}}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;scroll-behavior:auto!important}}
 </style>
 </head>
@@ -46,9 +44,8 @@ footer{padding:42px 6vw;display:flex;justify-content:space-between;align-items:c
     <p>Some bonds deserve more than a photograph. Keep a small reminder of your favourite companion close, wherever life takes you.</p>
     <a class="primary" href="#keepsakes">Discover the keepsake <span class="arrow">↗</span></a>
   </div>
-  <div class="hero-art reveal delay" aria-label="Illustrative keepsake pendant artwork">
-    <div class="orb"></div><div class="chain"></div><div class="pendant"><span>🐾</span></div>
-    <div class="art-caption">A memory you can carry.</div>
+  <div class="hero-art reveal delay">
+    <img class="hero-product-image" src="Pawvaultimage1.png" alt="PAWVAULT pet keepsake pendant">
   </div>
 </section>
 <div class="marquee"><span>MADE FOR THE ONES WHO MAKE LIFE FEEL LIKE HOME · KEEP THEIR MEMORY CLOSE · PAWVAULT · </span></div>
@@ -59,6 +56,11 @@ footer{padding:42px 6vw;display:flex;justify-content:space-between;align-items:c
     <article class="product-card"><span class="tag">A small everyday reminder</span><div class="product-visual"><div class="pendant" style="width:125px;height:125px"><span style="font-size:35px">🐾</span></div></div><div><h3>The Everyday Charm</h3><p>A simple charm concept, designed to keep close.</p></div></article>
   </div>
   <p style="font-size:11px;color:#887666;margin-top:18px">Product artwork is illustrative. Final materials, options, pricing and availability will be confirmed before orders open.</p>
+</section>
+<section class="section" style="text-align:center;">
+  <div class="eyebrow">THE PAWVAULT EXPERIENCE</div>
+  <h2>Made to keep them close.</h2>
+  <img class="info-product-image" src="Pawvaultimage2.png" alt="PAWVAULT product information guide">
 </section>
 <section class="section story" id="story">
   <div class="story-visual"><span>the love stays.</span></div>
@@ -75,10 +77,5 @@ footer{padding:42px 6vw;display:flex;justify-content:space-between;align-items:c
 <section class="note"><div class="eyebrow">PAWVAULT</div><h2>Because some memories deserve a place you can hold.</h2><p>A little piece of them. Forever.</p></section>
 </main>
 <footer><div class="footbrand">PAWVAULT</div><div>Thoughtfully imagined. Made for the love of pets.</div><div>© 2026 PAWVAULT</div></footer>
-<section style="padding:50px 20px;text-align:center;background:#f5eee5;">
-  <h2 style="color:#493323;">Discover PAWVAULT</h2>
-  <img src="Pawvaultimage1.png" alt="PAWVAULT Keepsake" style="width:100%;max-width:650px;border-radius:15px;margin:20px auto;display:block;">
-  <img src="Pawvaultimage2.png" alt="How the keepsake works" style="width:100%;max-width:650px;border-radius:15px;margin:20px auto;display:block;">
-</section>
 </body>
 </html>
