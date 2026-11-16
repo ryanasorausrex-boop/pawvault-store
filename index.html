@@ -18,10 +18,10 @@
 .primary{display:inline-flex;align-items:center;gap:22px;background:var(--brown);color:#fff9f1;padding:17px 23px;border-radius:99px;font-size:10px;letter-spacing:.16em;text-transform:uppercase;transition:.3s}.primary:hover{background:var(--dark);transform:translateY(-3px)}.arrow{font-size:18px}
 .hero-art{height:510px;position:relative;display:grid;place-items:center}
 .hero-product-image{width:100%;max-width:480px;height:auto;border-radius:18px;box-shadow:0 20px 50px #563d2d22;display:block}
-.info-product-image{width:100%;max-width:900px;height:auto;border-radius:18px;display:block;margin:35px auto}
+.product-image{width:100%;max-width:350px;height:auto;border-radius:15px;display:block}
 .marquee{padding:18px 0;background:var(--brown);color:#f5ebdf;overflow:hidden;white-space:nowrap;font-family:Georgia,serif;font-style:italic;font-size:16px;letter-spacing:.08em}.marquee span{display:inline-block;padding-left:100%;animation:marquee 28s linear infinite}@keyframes marquee{to{transform:translateX(-100%)}}
 .section{padding:110px 8vw}.section-head{display:flex;justify-content:space-between;align-items:end;gap:30px;margin-bottom:55px}.eyebrow{font-size:10px;letter-spacing:.22em;text-transform:uppercase;color:var(--muted);margin-bottom:15px}.section h2{font:400 clamp(38px,5vw,65px)/1 Georgia,serif;letter-spacing:-.04em;margin:0}.section-head p{max-width:300px;color:var(--muted);font:16px/1.6 Georgia,serif}
-.product-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:22px}.product-card{background:var(--paper);min-height:450px;position:relative;overflow:hidden;padding:35px;display:flex;flex-direction:column;justify-content:space-between}.product-card:first-child{min-height:560px}.product-visual{flex:1;display:grid;place-items:center;position:relative}.product-visual .pendant{width:155px;height:155px}.product-visual .pendant span{font-size:42px}.product-card h3{font:400 29px Georgia,serif;margin:0 0 8px}.product-card p{font-size:12px;color:var(--muted);margin:0}.tag{position:absolute;top:22px;left:22px;font-size:9px;letter-spacing:.15em;text-transform:uppercase;color:var(--muted)}
+.product-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:22px}.product-card{background:var(--paper);min-height:450px;position:relative;overflow:hidden;padding:35px;display:flex;flex-direction:column;justify-content:space-between}.product-card:first-child{min-height:560px}.product-visual{flex:1;display:grid;place-items:center;position:relative}.product-card h3{font:400 29px Georgia,serif;margin:0 0 8px}.product-card p{font-size:12px;color:var(--muted);margin:0}.tag{position:absolute;top:22px;left:22px;font-size:9px;letter-spacing:.15em;text-transform:uppercase;color:var(--muted)}
 .story{background:#e8ddcf;display:grid;grid-template-columns:1fr 1fr;gap:8vw;align-items:center}.story-visual{height:430px;background:linear-gradient(145deg,#d7c4ad,#f4eadc);display:grid;place-items:center;position:relative;overflow:hidden}.story-visual:before,.story-visual:after{content:"";position:absolute;border:1px solid #9b806255;border-radius:50%;width:340px;height:340px}.story-visual:after{width:260px;height:260px}.story-visual span{font:italic 22px Georgia,serif;color:#7c624a;z-index:1}.story-copy p{font:18px/1.8 Georgia,serif;color:#786554;max-width:440px}.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:35px;margin-top:55px}.step{border-top:1px solid var(--line);padding-top:20px}.step b{font:italic 25px Georgia,serif;color:#a58a6d}.step h3{font:400 22px Georgia,serif;margin:15px 0 9px}.step p{font-size:13px;line-height:1.7;color:var(--muted);max-width:260px}
 .note{background:var(--brown);color:#f7eee4;text-align:center;padding:100px 8vw}.note .eyebrow{color:#c8b49e}.note h2{font:400 clamp(42px,6vw,76px)/1.04 Georgia,serif;max-width:800px;margin:0 auto 25px;letter-spacing:-.04em}.note p{font:italic 18px Georgia,serif;color:#d8c8b7}
 footer{padding:42px 6vw;display:flex;justify-content:space-between;align-items:center;gap:20px;color:var(--muted);font-size:11px;letter-spacing:.08em}.footbrand{font-weight:800;letter-spacing:.2em;color:var(--brown)}
@@ -50,38 +50,59 @@ footer{padding:42px 6vw;display:flex;justify-content:space-between;align-items:c
 </section>
 <div class="marquee"><span>MADE FOR THE ONES WHO MAKE LIFE FEEL LIKE HOME · KEEP THEIR MEMORY CLOSE · PAWVAULT · </span></div>
 <section class="section" id="keepsakes">
-  <div class="section-head"><div><div class="eyebrow">The keepsake collection</div><h2>Love, held close.</h2></div><p>A thoughtful way to carry a reminder of the pet who made your world a little brighter.</p></div>
+  <div class="section-head">
+    <div><div class="eyebrow">The keepsake collection</div><h2>Love, held close.</h2></div>
+    <p>A thoughtful way to carry a reminder of the pet who made your world a little brighter.</p>
+  </div>
   <div class="product-grid">
-    <article class="product-card"><span class="tag">The signature keepsake · concept visual</span><div class="product-visual"><div class="pendant"><span>🐾</span></div></div><div><h3>The Memory Pendant</h3><p>A keepsake concept inspired by the bond you share.</p></div></article>
-   <article class="product-card">
-  <span class="tag">A small everyday reminder</span>
-  <div class="product-visual">
-    <img src="Pawvaultimage2.png" alt="PAWVAULT keepsake"
-         style="width:100%;max-width:350px;height:auto;border-radius:15px;">
-  </div>
-  <div>
-    <h3>The Everyday Charm</h3>
-    <p>A simple charm concept, designed to keep close.</p>
-  </div>
-</article>
+    <article class="product-card">
+      <span class="tag">The signature keepsake · concept visual</span>
+      <div class="product-visual">
+        <img class="product-image" src="Pawvaultimage2.png" alt="PAWVAULT Memory Pendant">
+      </div>
+      <div>
+        <h3>The Memory Pendant</h3>
+        <p>A keepsake concept inspired by the bond you share.</p>
+      </div>
+    </article>
+    <article class="product-card">
+      <span class="tag">Coming soon</span>
+      <div class="product-visual"></div>
+      <div>
+        <h3>The Everyday Charm</h3>
+        <p>A simple charm concept, designed to keep close.</p>
+      </div>
+    </article>
   </div>
   <p style="font-size:11px;color:#887666;margin-top:18px">Product artwork is illustrative. Final materials, options, pricing and availability will be confirmed before orders open.</p>
 </section>
-
 <section class="section story" id="story">
   <div class="story-visual"><span>the love stays.</span></div>
-  <div class="story-copy"><div class="eyebrow">More than an accessory</div><h2>For the love that leaves paw prints.</h2><p>They greet you at the door. They make ordinary days feel special. And somehow, they become part of every little thing. PAWVAULT is built around one simple idea: the memories we make with our pets deserve to be treasured.</p></div>
+  <div class="story-copy">
+    <div class="eyebrow">More than an accessory</div>
+    <h2>For the love that leaves paw prints.</h2>
+    <p>They greet you at the door. They make ordinary days feel special. And somehow, they become part of every little thing. PAWVAULT is built around one simple idea: the memories we make with our pets deserve to be treasured.</p>
+  </div>
 </section>
 <section class="section" id="how">
-  <div class="eyebrow">The idea, made personal</div><h2>Three simple steps.</h2>
+  <div class="eyebrow">The idea, made personal</div>
+  <h2>Three simple steps.</h2>
   <div class="steps">
     <article class="step"><b>01</b><h3>Choose your keepsake</h3><p>Explore the style that feels right for your story.</p></article>
     <article class="step"><b>02</b><h3>Share your details</h3><p>When orders open, we’ll explain the available personalisation options clearly.</p></article>
     <article class="step"><b>03</b><h3>Keep them close</h3><p>A little reminder of a bond that means everything.</p></article>
   </div>
 </section>
-<section class="note"><div class="eyebrow">PAWVAULT</div><h2>Because some memories deserve a place you can hold.</h2><p>A little piece of them. Forever.</p></section>
+<section class="note">
+  <div class="eyebrow">PAWVAULT</div>
+  <h2>Because some memories deserve a place you can hold.</h2>
+  <p>A little piece of them. Forever.</p>
+</section>
 </main>
-<footer><div class="footbrand">PAWVAULT</div><div>Thoughtfully imagined. Made for the love of pets.</div><div>© 2026 PAWVAULT</div></footer>
+<footer>
+  <div class="footbrand">PAWVAULT</div>
+  <div>Thoughtfully imagined. Made for the love of pets.</div>
+  <div>© 2026 PAWVAULT</div>
+</footer>
 </body>
 </html>
